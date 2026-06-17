@@ -46,6 +46,7 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/upload', require('./routes/files'));
 app.use('/api/users', require('./routes/users'));
 app.use('/api/contact', require('./routes/contact'));
+app.use('/api/site', require('./routes/sites'));
 
 app.use((req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
