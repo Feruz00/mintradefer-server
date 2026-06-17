@@ -363,6 +363,7 @@ module.exports = {
       titleRu: row.title,
       status: Math.random() > 0.7 ? 'deactive' : 'active',
       createdAt: now,
+      url: 'https://turkmenportal.com/',
       updatedAt: now,
     }));
     await queryInterface.bulkInsert('tbl_enterprises', newData, {});

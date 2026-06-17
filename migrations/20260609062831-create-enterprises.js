@@ -52,7 +52,12 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
+
       fax: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      url: {
         type: Sequelize.STRING,
         allowNull: false,
       },
